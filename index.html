@@ -1,0 +1,94 @@
+<html> 
+<head> 
+
+<title>Phone Support</title> 
+
+<link type="text/css" rel="stylesheet" href="main.css" />
+
+<script>
+
+function banner(){ 
+var text = confirm("I will now direct you to Apple's website!"); 
+return text; 
+}
+
+function answer(){
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "<input type="radio" name="trivia" value="2007"> 2007 <br>" && radio[i].checked == true) { 
+selection = true;
+  }//end if statement
+}//end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("Yay! You answered it correctly!").innerHTML = message;
+
+} //end function answer
+</script>
+
+</head> 
+<body id="background">
+<a href="http://apple.com" onclick="return banner()"><header>Welcome to Tech Support</header></a>
+<nav>
+	<ul id="navmenu">
+		<li class="navitem"><a href="index.html">Home</a></li>
+		<li class="navitem"><a href="software.html">Software Updates</a></li>
+		<li class="navitem"><a href="power.html">How to Save Power</a></li>
+	
+</nav>
+ 
+
+<h1>This website can help you do basic functions on your phone</h1>
+
+<p>Have you ever got <span class="wrap-text">a new phone</span> and have been <b>confused</b> on how to perform basic functions on it? If so, we can <u>teach</u> you the <i>basics</i> on how to be a pro at your new device!</p>
+
+<div class="rightside">
+	<div class="wrap-trivia">
+     <h1>iPhone Trivia Question</h1>
+     <p class="trivia">When was the first iPhone released?</p>
+     <form>
+     	<div id="response"></div>
+    <input type="radio" name="trivia" value="2007"> 2007 <br>
+    <input type="radio" name="trivia" value="2006"> 2006 <br>
+    <input type="radio" name="trivia" value="2005"> 2005 <br>
+    <input type="radio" name="trivia" value="2004"> 2004 <br>
+    <input type="button" value="Click Here" id=button onclick="answer()">
+    </form>
+</div>
+</div>
+
+<div class="leftside"
+
+<div class="wrap-list">
+<ol>
+	<li class="listitem">We can show you how to perform updates</li>
+	<li class="listitem">We can show you how to take screenshots</li>
+	<li class="listitem">We can give you advice on how to save power</li>
+</ol>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K4wEI5zhHB0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+Your browser does not support HTML 5 audio.
+</audio> 
+
+<hr>
+
+<img src="https://www.stockfreeimages.com/Mobile-smart-phone-in-hand-3-thumb28465616.jpg" />
+<img src="https://thumbs.dreamstime.com/z/iphone-s-hand-holding-new-white-blank-screen-isolated-white-35671157.jpg" id="second-image"/>
+<hr/>
+</div>
+<div class="clearfloat"></div>
+<center><span class="name"> Connor </span><a href="http://apple.com"><span class="favorite-website">My Favorite Website</span></a> </center>
+<footer><b>Connor Ivanoff-2017</b></footer>
+</body> 
+</html>
+</div>
